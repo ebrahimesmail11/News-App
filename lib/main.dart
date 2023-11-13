@@ -21,7 +21,7 @@ class NewsApp extends StatelessWidget {
         backgroundColor: Colors.black,
         splashIconSize: double.infinity,
         nextScreen: HomePage(),
-        duration: 3500,
+        duration: 2500,
       ),
     );
   }
