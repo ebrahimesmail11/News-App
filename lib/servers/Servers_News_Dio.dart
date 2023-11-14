@@ -13,15 +13,7 @@ class NewsDio{
          List<dynamic> articles = jsonData['articles'];
          List<ArticleModel> articleList = [];
          for (var article in articles) {
-           ArticleModel articleModel = ArticleModel(
-               image: article['urlToImage'],
-               title: article['title'],
-               subTitle: article['description'],
-             author: article['author'],
-             publishedAt: article["publishedAt"],
-             content: article["content"],
-             url: article["url"],
-           );
+           ArticleModel articleModel = ArticleModel.fromJson(article);
            articleList.add(articleModel);
          }
          return articleList;
